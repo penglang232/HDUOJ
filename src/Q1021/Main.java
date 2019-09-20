@@ -7,18 +7,18 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int n;
-		long val;
+		//long val;
 
 		while (s.hasNext()) {
 			n = s.nextInt();
 			//long start = System.currentTimeMillis();
-			val = f(n);
-			System.out.println(val);
-			System.out.println(val%3 == 0 ? "yes" : "no");
+			//val = f(n);
+			//System.out.println(val);
+			System.out.println((n-2)%4 != 0 ? "yes" : "no");
 			//System.out.println((System.currentTimeMillis() - start) + " ms");
 		}
 	}
-
+/*
 	public static long f(int n) {
 		if (n == 0) {
 			return 7L;
@@ -36,5 +36,5 @@ public class Main {
 			f2 = fn;
 		}
 		return fn;
-	}
+	}*/
 }
